@@ -1,0 +1,12 @@
+.direnv/*
+.venv/*
+.vscode/*
+__pycache__/*
+build/*
+dist/*
+venv/*
+.env
+*.pyc
+Lib/*
+Scripts/*
+*.pickle

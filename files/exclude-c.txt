@@ -1,0 +1,61 @@
+# https://codydunne.blogspot.com/2008/09/rsyncd-exclusions-for-using-backuppc-on.html
+#
+
+#Junction points
+# /Users/All Users
+# /Users/Users/Default User
+# /Users/Users/All Users/Application Data
+# /Users/Users/All Users/Desktop
+# /Users/All Users/Documents
+# /Users/All Users/Favorites
+# /Users/All Users/Start Menu
+# /Users/All Users/Templates
+# /Users/Public/Documents/My Music
+# /Users/Public/Documents/My Pictures
+# /Users/Public/Documents/My Videos
+
+#Excludes these junction points common to every user profile
+# /Users/*/Application Data
+# /Users/*/Cookies
+# /Users/*/Local Settings
+# /Users/*/My Documents
+# /Users/*/NetHood
+# /Users/*/PrintHood
+# /Users/*/Recent
+# /Users/*/SendTo
+# /Users/*/Start Menu
+# /Users/*/Templates
+# /Users/*/AppData/Local/Application Data
+# /Users/*/AppData/Local/History
+/Users/*/AppData/Local/Temporary Internet Files
+#/Users/*/Documents/My Music
+#/Users/*/Documents/My Pictures
+#/Users/*/Documents/My Videos
+
+#Excludes these temporary files
+/Users/*/AppData/Local/Microsoft/Windows/Temporary Internet Files
+/Users/*/AppData/Local/Temp
+# /Users/*/NTUSER.DAT
+# /Users/*/ntuser.dat.LOG1
+# /Users/*/ntuser.dat.LOG2
+# /Users/*/AppData/Local/Microsoft/Windows/UsrClass.dat
+# /Users/*/AppData/Local/Microsoft/Windows/UsrClass.dat.LOG1
+# /Users/*/AppData/Local/Microsoft/Windows/UsrClass.dat.LOG2
+/Users/*/AppData/Local/Microsoft/Windows Defender/FileTracker
+/Users/*/AppData/Local/Mozilla/Firefox/Profiles/*/Cache
+/Users/*/AppData/Local/Google/Chrome/User Data/Default/Cache
+/Users/*/AppData/Roaming/Microsoft/Windows/Recent
+*.lock
+
+# Excludes system stuff from full backups
+# /Program Files
+# /Windows
+# /$Recycle.Bin
+# /MSOCache
+# /System Volume Information
+# /autoexec.bat
+# /bootmgr
+# /BOOTSECT.BAK
+# /config.sys
+# /hiberfil.sys
+# /pagefile.sys
