@@ -23,3 +23,11 @@
 4. Edit `rsyncd.secrets` and set username:password
 4. Run `BackuppcService install`
 5. Run `BackuppcService start`
+
+# Notes
+1. There are `preusercmd.sh` and `postusercmd.sh` files for the backpc server.
+
+# Security Issues
+1. All access is served over HTTP not HTTPS
+2. There is no login
+3. The two major exploits would be a denial of service attack or stopping a backup from running everytime one is started.
